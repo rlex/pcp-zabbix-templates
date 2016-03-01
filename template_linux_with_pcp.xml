@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-03-01T14:42:20Z</date>
+    <date>2016-03-01T16:34:10Z</date>
     <groups>
         <group>
             <name>PCP Templates</name>
@@ -687,12 +687,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>TCP sync retransmits</name>
+                    <name>TCP syn retransmits</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>pcp.network.tcp.syncretrans</key>
+                    <key>pcp.network.tcp.synretrans</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2724,4 +2724,4 @@
             <screens/>
         </template>
     </templates>
-</zabbix_export>ti
+</zabbix_export>
