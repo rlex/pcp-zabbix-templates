@@ -1,6 +1,7 @@
 #### pcp-zabbix-templates
 
-There you can find templates to use with zabbix + pcp zabbix plugin.
+There you can find templates to use with zabbix + pcp zabbix plugin.  
+Some PCP PMDAS are also supported.
 
 ##### Notes:
 * Those templates are tested only on Linux, with 3.0 zabbix-agent and server
@@ -16,9 +17,12 @@ Can discover disks and network interfaces.
 ##### Linux
 Work-in-progress.  
 Core system monitoring. Just like stock "Template OS Linux" with a bit more info.  
+Please note that this template is not meant to replace stock zabbix linux template.  
+It's meant to complement it.  
+
 Features: 
-* In-depth network monitoring (TCP connections, retransmits, UDP datagrams and so on)
-* Memory monitoring: usage, faults, major faults  
+* In-depth network monitoring (TCP connections, retransmits, UDP datagrams)
+* Memory monitoring: usage, faults.  
 
 With discovery script installed:
 * Per-interface monitoring (errors, packets, bytes)
@@ -27,3 +31,7 @@ With discovery script installed:
 ##### MySQL
 Requires MySQL PMDAS in PCP.  
 Lots of metrics, mainly InnoDB-centric, like innodb buffer pool hit ratio % and stuff.
+
+##### ElasticSearch
+Very basic metrics. Shards status and cluster state with couple of triggers (state yellow/red)  
+ElasticSearch PMDA requires (at least on debian) libwww-perl and liblwp-useragent-determined-perl
