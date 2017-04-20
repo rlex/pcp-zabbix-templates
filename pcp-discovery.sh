@@ -2,7 +2,7 @@
 case "$1" in
 
   disk)
-    disks=($(cat /proc/diskstats | awk '{print $3}' | grep -v 'ram\|loop\|sr'))
+    disks=($(cat /proc/diskstats | awk '{print $3}' | grep -v 'ram\|loop\|sr|fd|dm-'))
     counter=${#disks[@]}
     echo "{"
     echo -e "\t\"data\":[\n"
@@ -12,6 +12,23 @@ case "$1" in
          echo -e "\t{ \"{#DISKDEV}\":\"${disks[$i]}\" }"
        else
          echo -e "\t{ \"{#DISKDEV}\":\"${disks[$i]}\" },"
+       fi
+    done
+    echo -e "\n\t]\n"
+    echo "}"
+  ;;
+
+  mdraid)
+    mddevices=($(cat /proc/diskstats | awk '{print $3}' | grep 'md'))
+    counter=${#mddevices[@]}
+    echo "{"
+    echo -e "\t\"data\":[\n"
+    for (( i=0; ${counter}>i; i++ ))
+    do
+       if (( $i == $counter-1 )); then
+         echo -e "\t{ \"{#MDDEV}\":\"${mddevices[$i]}\" }"
+       else
+         echo -e "\t{ \"{#MDDEV}\":\"${mddevices[$i]}\" },"
        fi
     done
     echo -e "\n\t]\n"
@@ -34,6 +51,8 @@ case "$1" in
     echo -e "\n\t]\n"
     echo "}"
   ;;
+
+
 
   *)
     echo "wrong argument"
