@@ -15,18 +15,18 @@ Some PCP PMDAS are also supported.
 Required for discovery rules in Linux template.  
 Can discover disks and network interfaces.  
 ##### Linux
-Work-in-progress.  
 Core system monitoring. Just like stock "Template OS Linux" with a bit more info.  
 Please note that this template is not meant to replace stock zabbix linux template.  
 It's meant to complement it.  
 
 Features: 
-* In-depth network monitoring (TCP connections, retransmits, UDP datagrams)
-* Memory monitoring: usage, faults.  
+* More detailed network monitoring (TCP connections, retransmits, UDP datagrams)
+* Memory monitoring: usage, faults, etc.
 
 With discovery script installed:
 * Per-interface monitoring (errors, packets, bytes)
 * Per-disk monitoring (IOPS, Bytes read/written, etc)
+* MDRaid monitoring (status only - 0 is OK, everything else is failed MD)
 
 ##### MySQL
 Requires MySQL PMDAS in PCP.  
