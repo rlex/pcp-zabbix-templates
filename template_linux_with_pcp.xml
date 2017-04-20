@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.0</version>
-    <date>2016-03-01T16:34:10Z</date>
+    <version>3.2</version>
+    <date>2017-04-20T11:25:43Z</date>
     <groups>
         <group>
             <name>PCP Templates</name>
@@ -34,6 +34,9 @@
                     <name>Networking</name>
                 </application>
                 <application>
+                    <name>PCP</name>
+                </application>
+                <application>
                     <name>Processes</name>
                 </application>
                 <application>
@@ -49,8 +52,8 @@
                     <snmp_oid/>
                     <key>pcp.disk.all.read</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -92,8 +95,8 @@
                     <snmp_oid/>
                     <key>pcp.disk.all.write</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -135,8 +138,8 @@
                     <snmp_oid/>
                     <key>pcp.mem.freemem</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -178,8 +181,8 @@
                     <snmp_oid/>
                     <key>pcp.mem.util.cached</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -221,8 +224,8 @@
                     <snmp_oid/>
                     <key>pcp.mem.util.used</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -264,8 +267,8 @@
                     <snmp_oid/>
                     <key>pcp.mem.vmstat.pgfault</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -307,8 +310,8 @@
                     <snmp_oid/>
                     <key>pcp.mem.vmstat.pgmajfault</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -350,8 +353,8 @@
                     <snmp_oid/>
                     <key>pcp.network.interface.in.packets[eth0]</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -393,8 +396,8 @@
                     <snmp_oid/>
                     <key>pcp.network.interface.out.packets[eth0]</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -436,8 +439,8 @@
                     <snmp_oid/>
                     <key>pcp.network.sockstat.tcp.inuse</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -479,8 +482,8 @@
                     <snmp_oid/>
                     <key>pcp.network.sockstat.udp.inuse</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -522,8 +525,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcp.fastretrans</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -565,8 +568,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcp.listendrops</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -608,8 +611,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcp.retranssegs</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -651,8 +654,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcp.slowstartretrans</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -694,8 +697,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcp.synretrans</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -737,8 +740,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcp.timeouts</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -780,8 +783,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.close</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -823,8 +826,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.close_wait</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -866,8 +869,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.closing</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -909,8 +912,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.established</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -952,8 +955,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.fin_wait1</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -995,8 +998,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.fin_wait2</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1038,8 +1041,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.last_ack</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1081,8 +1084,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.listen</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1124,8 +1127,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.syn_recv</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1167,8 +1170,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.syn_sent</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1210,8 +1213,8 @@
                     <snmp_oid/>
                     <key>pcp.network.tcpconn.time_wait</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1253,8 +1256,8 @@
                     <snmp_oid/>
                     <key>pcp.network.udp.indatagrams</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1296,8 +1299,8 @@
                     <snmp_oid/>
                     <key>pcp.network.udp.outdatagrams</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1339,8 +1342,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.blocked</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1382,8 +1385,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.defunct</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1425,8 +1428,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.kernel</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1468,8 +1471,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.runnable</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1511,8 +1514,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.sleeping</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1554,8 +1557,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.stopped</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1597,8 +1600,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.swapped</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1640,8 +1643,8 @@
                     <snmp_oid/>
                     <key>pcp.proc.runq.unknown</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1683,8 +1686,8 @@
                     <snmp_oid/>
                     <key>pcp.swap.pagesin</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1726,8 +1729,8 @@
                     <snmp_oid/>
                     <key>pcp.swap.pagesout</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
@@ -1769,8 +1772,8 @@
                     <snmp_oid/>
                     <key>pcp.vfs.files.count</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1812,8 +1815,8 @@
                     <snmp_oid/>
                     <key>pcp.vfs.files.max</key>
                     <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -1842,6 +1845,49 @@
                     <applications>
                         <application>
                             <name>VFS</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>PCP pmcd running</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>proc.num[,pcp,,/usr/lib/pcp/bin/pmcd]</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>PCP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1883,12 +1929,12 @@
                     <description/>
                     <item_prototypes>
                         <item_prototype>
-                            <name>Read operations on {DISKDEV}</name>
+                            <name>Read operations on {#DISKDEV}</name>
                             <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>pcp.disk.dev.read[{DISKDEV}]</key>
+                            <key>pcp.disk.dev.read[{#DISKDEV}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -1927,12 +1973,12 @@
                             <application_prototypes/>
                         </item_prototype>
                         <item_prototype>
-                            <name>Read bytes on {DISKDEV}</name>
+                            <name>Read bytes on {#DISKDEV}</name>
                             <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>pcp.disk.dev.read_bytes[{DISKDEV}]</key>
+                            <key>pcp.disk.dev.read_bytes[{#DISKDEV}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -1971,12 +2017,12 @@
                             <application_prototypes/>
                         </item_prototype>
                         <item_prototype>
-                            <name>Write operations on {DISKDEV}</name>
+                            <name>Write operations on {#DISKDEV}</name>
                             <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>pcp.disk.dev.write[{DISKDEV}]</key>
+                            <key>pcp.disk.dev.write[{#DISKDEV}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2015,12 +2061,12 @@
                             <application_prototypes/>
                         </item_prototype>
                         <item_prototype>
-                            <name>Write bytes on {DISKDEV}</name>
+                            <name>Write bytes on {#DISKDEV}</name>
                             <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>pcp.disk.dev.write_bytes[{DISKDEV}]</key>
+                            <key>pcp.disk.dev.write_bytes[{#DISKDEV}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -2060,6 +2106,105 @@
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>mdraid discovery</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>pcp.discovery[mdraid]</key>
+                    <delay>60</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>30</lifetime>
+                    <description>Discover mdraid devices</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>mdraid status for {#MDDEV}</name>
+                            <type>0</type>
+                            <snmp_community/>
+                            <multiplier>0</multiplier>
+                            <snmp_oid/>
+                            <key>pcp.disk.md.status[{#MDDEV}]</key>
+                            <delay>60</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Disk</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template OS Linux via PCP:pcp.disk.md.status[{#MDDEV}].last()}&lt;&gt;0</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>degraded mdraid {#MDDEV} on {HOST.NAME}</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
                 </discovery_rule>
@@ -2719,9 +2864,28 @@
                     <host_prototypes/>
                 </discovery_rule>
             </discovery_rules>
+            <httptests/>
             <macros/>
             <templates/>
             <screens/>
         </template>
     </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template OS Linux via PCP:proc.num[,pcp,,/usr/lib/pcp/bin/pmcd].last()}=0</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>pmcd is not running on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
 </zabbix_export>
